@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    name: `Hello Typescript World!`,
-    tagline: `Gatsby + SASS + Typescript = 💪`
+    name: `Async Validate Example`,
+    tagline: `Using React Hooks to asynchronously validate your inputs`
   },  
   plugins: [
     `gatsby-plugin-sass`,

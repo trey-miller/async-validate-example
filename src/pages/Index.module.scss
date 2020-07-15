@@ -1,13 +1,29 @@
+body {
+	background: black;
+	color: #eee;
+	padding: 1rem;
+}
+main {
+	background: #333;
+	box-shadow: 0.1rem 0.2rem 0.42rem rgba(200, 255, 200, 0.42);
+	font-family: sans-serif;
+	max-width: (1000rem/16);
+	margin: 1rem auto;
+}
+header {
+	background: #454;
+	color: white;
+	font-family: serif;
+	padding: 0.2rem 1rem;
+}
+
+input {
+	border-radius: 3px;
+	padding: 0.42rem;
+	width: 60%;
+}
+
 .Container {
-  max-width: 60rem;
-  margin: 3rem auto 0;
-  font-family: sans-serif;
-  
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #aaa;
-  }
+	color: #ccc;
+	padding: 1rem;
 }
