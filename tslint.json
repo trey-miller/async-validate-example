@@ -1,14 +1,26 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended",
-        "tslint-react"
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
+  "jsRules": {},
+  "rules": {
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
     ],
-    "jsRules": {},
-    "rules": {
-      "quotemark": [true, "single", "jsx-double"],
-      "interface-name": [false],
-      "jsx-no-multiline-js": [false]
-    },
-    "rulesDirectory": []
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "interface-name": [
+      false
+    ],
+    "jsx-no-multiline-js": [
+      false
+    ]
+  },
+  "rulesDirectory": []
 }

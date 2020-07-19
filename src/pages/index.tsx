@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import * as styles from './Index.module.scss';
 import { ValidatedInput } from '../components/ValidatedInput';
+import * as styles from './Index.module.scss';
 
 interface IndexPageProps {
   data: {
@@ -27,12 +27,12 @@ export const indexPageQuery = graphql`
 
 function validate(value: string): Promise<string | null> {
   return new Promise(resolve => {
-      setTimeout(() => {
-          if (value && value.indexOf('foo') >= 0) {
-              resolve(null);
-          }
-          resolve('Value does not contain foo.');
-      }, 1000);
+    setTimeout(() => {
+      if (value && value.indexOf('foo') >= 0) {
+        resolve(null);
+      }
+      resolve('Value does not contain foo.');
+    }, 1000);
   });
 }
 
@@ -52,7 +52,10 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
             {/* <p>{tagline}</p> */}
           </header>
           <div className={styles.Container}>
-            <p>Enter a value. It will validate with a simulated API call, and determine if the value contains the text "foo".</p>
+            <p>
+              Enter a value. It will validate with a simulated API call,
+              and determine if the value contains the text "foo".
+            </p>
             <ValidatedInput validate={validate} />
           </div>
         </main>
@@ -60,4 +63,3 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
     );
   }
 }
-
